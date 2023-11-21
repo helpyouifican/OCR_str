@@ -63,8 +63,7 @@ def response(response):
 if __name__ == "__main__":
     os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = r"openocr-394310-95d8b763df38.json"
     load_dotenv()
-    api_key = os.getenv('OPENAI_API_KEY')
-    client = OpenAI(api_key=api_key)
+    client = OpenAI(api_key=os.getenv('OPENAI_API_KEY'))
     output_text=main()
     messages=[]
     # user_content=input("user : ")
