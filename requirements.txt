@@ -11,3 +11,4 @@ torch
 google-cloud-vision
 streamlit-extras
 openai
+python-dotenv

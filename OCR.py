@@ -9,6 +9,8 @@ torch.cuda.empty_cache()
 st.set_page_config(page_title="OCR web", layout="wide")
 from openai import OpenAI
 os.environ["KMP_DUPLICATE_LIB_OK"]="TRUE"
+from dotenv import load_dotenv
+
 
 
 
@@ -60,7 +62,9 @@ def response(response):
        
 if __name__ == "__main__":
     os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = r"openocr-394310-95d8b763df38.json"
-    client = OpenAI(api_key='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')
+    load_dotenv()
+    api_key = os.getenv('OPENAI_API_KEY')
+    client = OpenAI(api_key=api_key)
     output_text=main()
     messages=[]
     # user_content=input("user : ")
