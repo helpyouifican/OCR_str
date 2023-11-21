@@ -1,0 +1,12 @@
+numpy
+opencv_contrib_python
+opencv_python
+opencv_python_headless
+Pillow
+protobuf
+streamlit
+extra-streamlit-components
+streamlit-option-menu
+torch
+google-cloud-vision
+streamlit-extras
