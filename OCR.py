@@ -60,10 +60,11 @@ def response(response):
     st.subheader("선생님의 코멘트:")
     st.write(response)
        
+
 if __name__ == "__main__":
     os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = r"openocr-394310-95d8b763df38.json"
     load_dotenv()
-    client = OpenAI(api_key=os.getenv('OPENAI_API_KEY'))
+    client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
     output_text=main()
     messages=[]
     # user_content=input("user : ")
