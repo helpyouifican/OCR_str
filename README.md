@@ -1,1 +1,3 @@
-# OCR_streamlit
+-----
+$ pip install -r requirements.txt
+-----
