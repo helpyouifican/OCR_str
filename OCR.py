@@ -15,7 +15,7 @@ from dotenv import load_dotenv
 
 
 #title
-st.title("OCR web")
+st.title("일기검사")
 
 #subtitle
 st.markdown("## Optical Character Recognition - Extract `Text` from  `Images`")
